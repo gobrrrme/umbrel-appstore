@@ -1,14 +1,14 @@
 manifestVersion: 1
 id: gobrrr-publicpool
 category: bitcoin
-name: Public Pool
+name: Go Brrr Pool
 version: "3c1289c"
-tagline: Fully Open Source Solo Bitcoin Mining Pool
+tagline: Open Source Solo Bitcoin Mining Go Brrr
 icon: https://raw.githubusercontent.com/gobrrrme/gobrrr/5a1a222c60b661d4dba844164153ca82c10c89e4/logos/GoBrrr_Logo_2024.svg
 description: >-
-  Public Pool is an open-source, solo Bitcoin mining application that lets you run your own pool using your own node.
+  Go Brrr Pool is an open-source, solo Bitcoin mining application that lets you run your own pool using your own node.
   Instead of relying on centralized pools, Public Pool enables your mining hardware to submit work to your personal setup, ensuring that you have full control over your mining operation.
-  If you successfully mine a block, you receive the entire block reward. No splitting with other miners. No fees. No middleman.
+  If you successfully mine a block, you receive the entire block reward. No splitting with other miners. No fees. No middleman. Forked from Public Pool
   
   
   On umbrelOS, Public Pool is automatically configured to work with your Bitcoin node—no extra setup required. Simply install the app, and it's ready to go.
@@ -22,7 +22,7 @@ dependencies:
   - bitcoin
 repo: https://github.com/benjamin-wilson/public-pool
 support: https://github.com/benjamin-wilson/public-pool/issues
-port: 2019
+port: 1337
 gallery:
   - 1.jpg
   - 2.jpg
