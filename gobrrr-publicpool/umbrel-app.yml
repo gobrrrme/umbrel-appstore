@@ -4,6 +4,7 @@ category: bitcoin
 name: Public Pool
 version: "3c1289c"
 tagline: Fully Open Source Solo Bitcoin Mining Pool
+icon: https://raw.githubusercontent.com/gobrrrme/gobrrr/5a1a222c60b661d4dba844164153ca82c10c89e4/logos/GoBrrr_Logo_2024.svg
 description: >-
   Public Pool is an open-source, solo Bitcoin mining application that lets you run your own pool using your own node.
   Instead of relying on centralized pools, Public Pool enables your mining hardware to submit work to your personal setup, ensuring that you have full control over your mining operation.
