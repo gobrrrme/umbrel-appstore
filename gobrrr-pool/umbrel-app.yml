@@ -23,7 +23,6 @@ developer: GoBrrr
 website: https://gobrrr.me
 dependencies:
   - bitcoin
-  - mempool
 repo: https://github.com/gobrrrme/GoBrrr-Pool
 support: https://github.com/gobrrrme/GoBrrr-Pool/issues
 port: 3000
@@ -32,7 +31,10 @@ gallery:
   - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool/2.jpg?raw=true
   - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool/3.jpg?raw=true
 path: ""
+releaseNotes: >-
+  Beta release of Go Brrr Pool for Umbrel. Solo mine Bitcoin with your own node using CKPool-Solo.
 defaultUsername: ""
 defaultPassword: ""
 submitter: GoBrrr
-submission: https://github.com/gobrrrme/umbrel-app-store
+submission: https://github.com/gobrrrme/umbrel-appstore
+
