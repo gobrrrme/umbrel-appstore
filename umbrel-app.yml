@@ -1,0 +1,33 @@
+manifestVersion: 1
+id: gobrrr-pool
+category: bitcoin
+name: Go Brrr Pool
+version: "1.0.0"
+tagline: Solo Bitcoin mining pool - Not your pool, not your blocks!
+description: >-
+  Go Brrr Pool is a self-hosted solo Bitcoin mining pool powered by CKPool.
+  Connect your miners directly to your own node and keep 100% of block rewards.
+
+
+  Features include real-time hashrate monitoring, worker statistics,
+  pool-wide leaderboard, efficiency dashboard, and a mobile-responsive web interface.
+
+
+  Perfect for small-scale miners, BitAxe owners, and anyone who wants to
+  mine directly to their own Bitcoin node without relying on third-party pools.
+developer: GoBrrr
+website: https://gobrrr.me
+dependencies:
+  - bitcoin
+repo: https://github.com/gobrrrme/GoBrrr-Pool
+support: https://github.com/gobrrrme/GoBrrr-Pool/issues
+port: 3000
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: GoBrrr
+submission: https://github.com/gobrrrme/umbrel-app-store
