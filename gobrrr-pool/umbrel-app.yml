@@ -5,6 +5,9 @@ name: Go Brrr Pool
 version: "1.0.0"
 tagline: Bitcoin Solo Mining, Done Right!
 description: >-
+  THIS IS BETA SOFTWARE! RUN AT YOUR OWN RISK!  
+  
+  
   Go Brrr Pool is a self-hosted solo Bitcoin mining pool powered by CKPool-Solo.
   Connect your miners directly to your own node and keep 100% of block rewards.
 
@@ -17,7 +20,12 @@ description: >-
 
 
 
-  DISCLAIMER - THIS IS BETA SOFTWARE! RUN AT YOUR OWN RISK!
+  This software is free as in FREEDOM!
+  
+  
+  If you like this App and want to support me
+  Buy Miners & Gear: https://gobrrr.me
+  Donate: https://gobrrr.me/donate
   
 developer: GoBrrr
 website: https://gobrrr.me
@@ -37,4 +45,5 @@ defaultUsername: ""
 defaultPassword: ""
 submitter: GoBrrr
 submission: https://github.com/gobrrrme/umbrel-appstore
+
 
