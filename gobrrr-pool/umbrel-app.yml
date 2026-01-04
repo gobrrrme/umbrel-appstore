@@ -2,7 +2,7 @@ manifestVersion: 1
 id: gobrrr-pool
 category: bitcoin
 name: Go Brrr Pool
-version: "1.0.0"
+version: "1.0.1"
 tagline: Bitcoin Solo Mining, Done Right!
 description: >-
   THIS IS BETA SOFTWARE! RUN AT YOUR OWN RISK!  
