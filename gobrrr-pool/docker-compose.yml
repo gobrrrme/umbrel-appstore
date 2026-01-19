@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_WHITELIST: "/api/*"
 
   ckpool:
-    image: ghcr.io/gobrrrme/gobrrr-ckpool:v1.0.0@sha256:3d469ed1d8949b85326af990f05356988b4b0bfc230ac62017f6d24353c559ad
+    image: ghcr.io/gobrrrme/gobrrr-pool-webui:latest@sha256:3cb895bd43390294c3ccdd21fd7d771c2bf5fca89c96a2d2e74aac19473ab14a
     restart: on-failure
     stop_grace_period: 1m
     ports:
@@ -30,7 +30,7 @@ services:
     container_name: gobrrr-pool_ckpool_1
 
   webui:
-    image: ghcr.io/gobrrrme/gobrrr-webui:v1.0.0@sha256:1dee3bf6ad0d1d047e8a15340f9301ae8784a6c265534eaf21d2a0ecee368ef5
+    image: ghcr.io/gobrrrme/gobrrr-pool-webui:latest@sha256:3cb895bd43390294c3ccdd21fd7d771c2bf5fca89c96a2d2e74aac19473ab14a5
     restart: on-failure
     stop_grace_period: 30s
     volumes:
