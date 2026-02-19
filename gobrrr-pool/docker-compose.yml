@@ -4,11 +4,11 @@ services:
   app_proxy:
     environment:
       APP_HOST: gobrrr-pool_webui_1
-      APP_PORT: 3000
+      APP_PORT: 21421
       PROXY_AUTH_WHITELIST: "/api/*"
 
   ckpool:
-    image: ghcr.io/gobrrrme/gobrrr-ckpool:v1.0.0@sha256:3d469ed1d8949b85326af990f05356988b4b0bfc230ac62017f6d24353c559ad
+    image: ghcr.io/gobrrrme/gobrrr-ckpool:latest
     restart: on-failure
     stop_grace_period: 1m
     ports:
@@ -39,7 +39,7 @@ services:
       - ${APP_DATA_DIR}/data/webui:/app/data
     environment:
       - NODE_ENV=production
-      - PORT=3000
+      - PORT=21421
       - CKPOOL_SOCKET_DIR=/tmp/ckpool
       - CKPOOL_LOGS_DIR=/var/log/ckpool
       - MEMPOOL_API_URL=https://mempool.space/api
