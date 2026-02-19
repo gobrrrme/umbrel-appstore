@@ -37,7 +37,7 @@ description: >-
   V1.02 - Fixed NMminer hashrate display bug
           Added public API Endpoints
 
-  V1.03 - **This release contains Pool & WebUI Updates**
+  V1.03 - This release contains Pool & WebUI Updates
           Reworked Dashboard & Stats page
           Smart Vardiff & Automatic Miner Recognition
           Improved handling of mining rentals
