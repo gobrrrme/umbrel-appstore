@@ -37,6 +37,15 @@ description: >-
   V1.02 - Fixed NMminer hashrate display bug
           Added public API Endpoints
 
+  V1.03 - **This release contains Pool & WebUI Updates**
+          Reworked Dashboard & Stats page
+          Smart Vardiff & Automatic Miner Recognition
+          Improved handling of mining rentals
+          Improved stability for high hashrate miners
+          Fixed connection limit issue that could cause the pool to stop accepting new workers under heavy load
+          Max worker connections now set to 69420          
+
+
   
 developer: GoBrrr
 website: https://gobrrr.me
