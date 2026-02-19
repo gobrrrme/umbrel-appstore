@@ -43,6 +43,7 @@ services:
       - CKPOOL_SOCKET_DIR=/tmp/ckpool
       - CKPOOL_LOGS_DIR=/var/log/ckpool
       - MEMPOOL_API_URL=https://mempool.space/api
+      - STRATUM_PORT=21420
     depends_on:
       - ckpool
     container_name: gobrrr-pool_webui_1
