@@ -6,9 +6,7 @@ version: "1.0.3"
 icon: https://raw.githubusercontent.com/gobrrrme/GoBrrr-Pool/main/webui/public/images/brrrpool.png
 tagline: Bitcoin Solo Mining, Done Right!
 description: >-
-  THIS IS BETA SOFTWARE! RUN AT YOUR OWN RISK!  
-  
-  
+    
   Go Brrr Pool is a self-hosted solo Bitcoin mining pool powered by CKPool-Solo.
   Connect your miners directly to your own node and keep 100% of block rewards.
 
