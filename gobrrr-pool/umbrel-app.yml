@@ -2,7 +2,7 @@ manifestVersion: 1
 id: gobrrr-pool
 category: bitcoin
 name: Go Brrr Pool
-version: "1.0.2"
+version: "1.0.3"
 icon: https://raw.githubusercontent.com/gobrrrme/GoBrrr-Pool/main/webui/public/images/brrrpool.png
 tagline: Bitcoin Solo Mining, Done Right!
 description: >-
