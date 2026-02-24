@@ -46,7 +46,8 @@ description: >-
           Max worker connections now set to 69420
           Changed Webinterface Port to 21421
 
-
+  V1.04 - UI Overhaul
+          Fixed vardiff bug leading to wrong hashrates
   
 developer: GoBrrr
 website: https://gobrrr.me
