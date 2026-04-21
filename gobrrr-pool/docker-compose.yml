@@ -64,4 +64,4 @@ services:
       - '23002:23002'
     volumes:
       - ${APP_DATA_DIR}/data/ckpool-logs/ckpool.log:/data/ckpool.log:ro
-    container_name: gobrrr-pool_etl_1
+    container_name: gobrrr-pool_etl_1   
