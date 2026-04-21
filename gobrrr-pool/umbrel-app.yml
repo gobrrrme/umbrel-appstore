@@ -2,7 +2,7 @@ manifestVersion: 1
 id: gobrrr-pool
 category: bitcoin
 name: Go Brrr Pool
-version: "1.0.5"
+version: "1.0.6"
 icon: https://raw.githubusercontent.com/gobrrrme/GoBrrr-Pool/main/webui/public/images/brrrpool.png
 tagline: Bitcoin Solo Mining, Done Right!
 description: >-
@@ -47,11 +47,12 @@ description: >-
           Changed Webinterface Port to 21421
 
   V1.04 - UI Overhaul
-          Fixed vardiff bug leading to wrong hashrates
+          Fixed vardiff bug leading to wrong hashrate values in ui
 
   V1.05 - Complete redesign of user interface
-          Add highdiff port 4444
+          Add highdiff port 21422
           Fix startdiff bug
+          Add homescreen widget (thanks RodB)
   
 developer: GoBrrr
 website: https://gobrrr.me
