@@ -58,7 +58,7 @@ description: >-
           Fix startdiff bug
           Add homescreen widget (thanks RodB)
   
-developer: GoBrrr & RodB
+developer: GoBrrr
 website: https://gobrrr.me
 dependencies:
   - bitcoin
