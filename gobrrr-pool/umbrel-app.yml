@@ -56,7 +56,7 @@ description: >-
   V1.1 - Complete redesign of user interface
           Add highdiff port 21422
           Fix startdiff bug
-          Add homescreen widget (thanks RodB)
+          Add homescreen widget by RodB
   
 developer: GoBrrr
 website: https://gobrrr.me
