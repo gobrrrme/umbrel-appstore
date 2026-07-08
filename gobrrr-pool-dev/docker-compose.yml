@@ -3,10 +3,9 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: gobrrr-pool_webui_1
+      APP_HOST: gobrrr-pool-dev_webui_1
       APP_PORT: 21421
       PROXY_AUTH_WHITELIST: /api/*
-    container_name: gobrrr-pool_app_proxy_1
 
   ckpool:
     image: ghcr.io/gobrrrme/gobrrr-ckpool:v1.2.1@sha256:7f255e43f4b8f27c1ad0aee1247e9534828f372929a2af9f8735418c5e44e86c
@@ -36,7 +35,6 @@ services:
       - UPDATE_INTERVAL=20
       - STRATUM_HIGHDIFF_PORT=4444
       - HIGHDIFF=1000000
-    container_name: gobrrr-pool_ckpool_1
 
   webui:
       image: ghcr.io/gobrrrme/gobrrr-pool-webui:v1.2.1@sha256:82512e24d816c287c6c2f2badad41656d74318fbcc5b095961656e119f02e2f1
@@ -59,7 +57,6 @@ services:
         - BITCOIN_RPC_PASS=${APP_BITCOIN_RPC_PASS}
       depends_on:
         - ckpool
-      container_name: gobrrr-pool_webui_1
 
   gobrrr-stats:
     image: rodb2008com/gobrrr-pool-api-etl:v1
@@ -69,4 +66,3 @@ services:
         condition: service_healthy
     volumes:
       - ${APP_DATA_DIR}/data/ckpool-logs/ckpool.log:/data/ckpool.log:ro
-    container_name: gobrrr-pool_etl_1

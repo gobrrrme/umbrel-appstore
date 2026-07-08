@@ -1,7 +1,7 @@
 manifestVersion: 1
-id: gobrrr-pool
+id: gobrrr-pool-dev
 category: bitcoin
-name: Go Brrr Pool
+name: Go Brrr Pool (Dev)
 
 version: "1.2.2"
 
