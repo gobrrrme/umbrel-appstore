@@ -3,7 +3,7 @@ id: gobrrr-pool
 category: bitcoin
 name: Go Brrr Pool
 
-version: "1.1.0"
+version: "1.2.1"
 
 icon: https://raw.githubusercontent.com/gobrrrme/GoBrrr-Pool/main/webui/public/images/brrrpool.png
 tagline: Bitcoin Solo Mining, Done Right!
@@ -75,8 +75,10 @@ gallery:
   - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool/4.png?raw=true
 path: ""
 releaseNotes: >-
-  Beta release of Go Brrr Pool for Umbrel. Solo mine Bitcoin with your own node using CKPool-Solo.
-  V1.10 - Added Umbrel Web Widget for Pool Stats
+  V1.2.1 - ckpool engine updated to latest upstream (new stratum message
+  engine, memory-leak and stability fixes). Fixed Bitcoin provider selection
+  for Bitcoin Knots users (thanks BuffaloDyl). Dashboard shows Core vs Knots.
+  Leaderboard color tweak (thanks rafxo).
 defaultUsername: ""
 defaultPassword: ""
 submitter: GoBrrr
