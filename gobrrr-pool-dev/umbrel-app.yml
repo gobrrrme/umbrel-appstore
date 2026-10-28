@@ -1,89 +1,75 @@
 manifestVersion: 1
 id: gobrrr-pool-dev
+storage:
+  dataRoot: data
 category: bitcoin
 name: Go Brrr Pool (Dev)
-
-version: "1.2.2"
-
 icon: https://raw.githubusercontent.com/gobrrrme/GoBrrr-Pool/main/webui/public/images/brrrpool.png
+version: "1.2.3"
 tagline: Bitcoin Solo Mining, Done Right!
 description: >-
-
-  Go Brrr Pool is a self-hosted solo Bitcoin mining pool powered by CKPool-Solo.
+  Go Brrr Pool is a self-hosted solo Bitcoin mining pool powered by ckpool-solo.
   Connect your miners directly to your own node and keep 100% of block rewards.
+  No third-party pool, no KYC, no fees, no middleman.
 
 
-  Drag and Drop customizable feature rich Webinterface. real-time hashrate monitoring, worker statistics,
-  pool-wide leaderboard, efficiency dashboard, and local mempool api integration.
+  Features a customizable real-time web dashboard with hashrate monitoring,
+  worker statistics, pool-wide leaderboard, efficiency dashboard, and local
+  mempool API integration, using your local Mempool app when installed. ZMQ
+  enables instant block notifications and automatic difficulty adjustment
+  accepts diff proposals from miners.
 
-  
-  ZMQ for instant Block Notifications enabled, automatic difficulty adjustment, accepts diff proposals.
 
+  Two stratum ports: port 21420 for standard mining, port 21422 for
+  high-difficulty mode (min diff 1,000,000) suited for powerful machines and
+  hashrate rentals. Workers connect using their Bitcoin address as the username —
+  any block found pays out directly and entirely to the miner's own wallet.
+
+
+  Built on ckpool, the same battle-tested open-source pool software powering
+  solo.ckpool.org.
 
 
   This software is free as in FREEDOM!
 
+
   Homescreen widget developed by RodB.
-  
-  
-  If you like this App and want to support me:
-  
-  Buy Miners & Gear: https://gobrrr.me
-  
-  Donate: https://gobrrr.me/donate
+releaseNotes: >-
+  The web dashboard now runs on Node.js 24, as Node.js 20 no longer receives
+  security updates. The dashboard image is also less than half its previous
+  size.
 
 
+  New read-only public API for monitoring apps, so you can follow your pool's
+  hashrate, best share and workers from a phone app next to your rigs. It is
+  read-only and never exposes miner IP addresses.
 
-  V1.01 - Fixed AVX Instructions
+
+  Fixed ckpool receiving full blocks over ZMQ instead of only block hashes on
+  nodes that publish both on the same port, which caused log spam.
 
 
-  V1.02 - Fixed NMminer hashrate display bug
-          Added public API Endpoints
-
-          
-  V1.03 - This release contains Pool & WebUI Updates
-          Reworked Dashboard & Stats page
-          Smart Vardiff & Automatic Miner Recognition
-          Improved handling of mining rentals
-          Improved stability for high hashrate miners
-          Fixed connection limit issue that could cause the pool to stop accepting new workers under heavy load
-          Max worker connections now set to 69420
-          Changed Webinterface Port to 21421
-          
-  V1.10 - Add Umbrel Web Widget for Pool Stats developed by RodB
-
-  V1.04 - UI Overhaul
-          Fixed vardiff bug leading to wrong hashrate values in ui
-
-  V1.1 - Complete redesign of user interface
-          Add highdiff port 21422
-          Fix startdiff bug
-          Add homescreen widget by RodB
-  
+  Backups no longer include the ever-growing pool log file; pool and worker
+  statistics are still backed up.
 developer: GoBrrr
 website: https://gobrrr.me
 dependencies:
   - bitcoin
-  - mempool
 repo: https://github.com/gobrrrme/GoBrrr-Pool
 support: https://github.com/gobrrrme/GoBrrr-Pool/issues
 port: 21421
 gallery:
-  - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool/1.jpg?raw=true
-  - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool/2.jpg?raw=true
-  - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool/3.jpg?raw=true
-  - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool/4.png?raw=true
+  - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool-dev/1.jpg?raw=true
+  - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool-dev/2.jpg?raw=true
+  - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool-dev/3.jpg?raw=true
+  - https://github.com/gobrrrme/umbrel-appstore/blob/master/gobrrr-pool-dev/4.png?raw=true
 path: ""
-releaseNotes: >-
-  V1.2.1 - ckpool engine updated to latest upstream (new stratum message
-  engine, memory-leak and stability fixes). Fixed Bitcoin provider selection
-  for Bitcoin Knots users (thanks BuffaloDyl). Dashboard shows Core vs Knots.
-  Leaderboard color tweak (thanks rafxo).
 defaultUsername: ""
 defaultPassword: ""
-submitter: GoBrrr
-submission: https://github.com/gobrrrme/umbrel-appstore
-
+backupIgnore:
+  - data/ckpool-logs/ckpool.log
+  - data/ckpool-logs/ckpool.log.old
+  - data/ckpool-socket
 widgets:
   - id: "stats"
     type: "four-stats"
@@ -106,3 +92,5 @@ widgets:
         - title: "Share Rate"
           text: "0.0"
           subtext: "/min"
+submitter: GoBrrr
+submission: https://github.com/gobrrrme/umbrel-appstore
